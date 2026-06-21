@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes",
+  "description": "VEPCON is a multimodal neuroimaging dataset comprising high-density EEG, structural MRI, and diffusion-weighted imaging from 20 participants performing visual discrimination tasks. The dataset includes raw data, preprocessed EEG single trials, individual brain parcellations at multiple spatial scales (83-1015 regions), structural connectomes derived from diffusion imaging, and EEG source imaging solutions. This resource supports multimodal methods development, structure-function relationship studies, and optimization of source imaging and graph analysis techniques.",
+  "methods_description": "High-density EEG was recorded during two visual tasks: face discrimination (task-faces) and motion coherence discrimination (task-motion). Structural MRI and diffusion-weighted images were acquired in a separate session. EEG preprocessing included single-trial extraction for each condition. Structural MRIs were processed with Freesurfer 7.1.1 to generate brain parcellations at 5 spatial resolutions and corresponding structural connectomes based on fiber count, fiber density, fractional anisotropy, and mean diffusivity. Boundary Element Models were constructed using MNE for EEG source imaging.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,12 +18,30 @@
       "orcid": "0000-0002-9883-3371"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003505.v1.1.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "visual evoked potentials"
+    },
+    {
+      "term": "source imaging"
+    },
+    {
+      "term": "brain parcellation"
+    },
+    {
+      "term": "structural connectome"
+    },
+    {
+      "term": "diffusion weighted imaging"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1038/s41597-021-01116-1",
       "identifier_type": "DOI",
@@ -36,6 +56,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003505",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003505.v1.1.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -52,14 +77,14 @@
       "award_number": "CRSII5-170873"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "dwi",
     "eeg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "60.9 GB (8017 files)"
   ],
   "formats": [
     ".1/sub-01/bem/watershed/sub-01_brain_surface",
@@ -241,54 +266,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "VEPCON is a multimodal neuroimaging dataset comprising high-density EEG, structural MRI, and diffusion-weighted imaging from 20 participants performing visual discrimination tasks. The dataset includes raw EEG and MRI data, preprocessed EEG, individual brain parcellations at five spatial resolutions (83, 129, 234, 463, and 1015 regions), structural connectomes derived from diffusion imaging, and EEG source imaging solutions computed using boundary element models. This resource supports multimodal methods development, structure-function relationship studies, and optimization of source imaging and graph analytical approaches. Note: Raw EEG data for sub-05 (both task-faces and task-motion) and sub-15 (task-motion) were excluded due to excessive motion artifacts.",
-  "methods_description": "High-density EEG was recorded during two visual tasks: face discrimination (task-faces) and motion coherence discrimination (task-motion). Structural MRI and diffusion-weighted images were acquired in a separate session. EEG preprocessing included single-trial extraction for each condition. Structural connectomes were derived from fiber count, fiber density, fractional anisotropy, and mean diffusivity maps. Individual brain parcellations were generated at five spatial resolutions (83, 129, 234, 463, and 1015 regions). EEG inverse solutions were computed based on individual anatomy using boundary element models derived from Freesurfer segmentations.",
-  "keywords": [
-    {
-      "term": "visual evoked potentials"
-    },
-    {
-      "term": "EEG source imaging"
-    },
-    {
-      "term": "source localization"
-    },
-    {
-      "term": "brain parcellation"
-    },
-    {
-      "term": "structural connectome"
-    },
-    {
-      "term": "diffusion weighted imaging"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "high-density EEG"
-    },
-    {
-      "term": "face discrimination"
-    },
-    {
-      "term": "motion coherence"
-    },
-    {
-      "term": "boundary element model"
-    },
-    {
-      "term": "structural connectivity"
-    },
-    {
-      "term": "graph analysis"
-    },
-    {
-      "term": "Freesurfer"
-    },
-    {
-      "term": "BIDS"
-    }
-  ],
-  "source_hash": "9522b524ecd7ecca941c2b11add0ce65bb6a2cc842df103816a7394cd860b853"
+  "source_hash": "cb6f0f88f9c9900113968f8b67d1b4b866fa7262b54d3b94a7499eccf184c5eb"
 }
