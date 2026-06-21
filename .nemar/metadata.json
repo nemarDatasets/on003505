@@ -1,41 +1,294 @@
 {
   "version": "2.0",
-  "dataset_id": "on003505",
-  "source": "openneuro",
-  "source_id": "ds003505",
+  "pipeline_stage": "enriched",
   "title": "VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "David Pascucci": {},
+    "David Pascucci": {
+      "orcid": "0000-0002-1139-2586"
+    },
     "Sebastien Tourbier": {},
     "Joan Rue-Queralt": {},
     "Margherita Carboni": {},
     "Patric Hagmann": {},
-    "Gijs Plomp": {}
+    "Gijs Plomp": {
+      "orcid": "0000-0002-9883-3371"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003505.v1.1.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1038/s41597-021-01116-1",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003505",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003505",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.6.0",
-  "recording_modality": [
-    "anat",
-    "dwi",
-    "eeg"
-  ],
-  "datatypes": [
-    "anat",
-    "dwi",
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was supported by Swiss National Science Foundation grants PP00P1_183714, PP00P1_190065 and CRSII5-170873."
+      "funder_name": "Swiss National Science Foundation",
+      "award_number": "PP00P1_183714"
+    },
+    {
+      "funder_name": "Swiss National Science Foundation",
+      "award_number": "PP00P1_190065"
+    },
+    {
+      "funder_name": "Swiss National Science Foundation",
+      "award_number": "CRSII5-170873"
     }
-  ]
+  ],
+  "modalities": [
+    "anat",
+    "dwi",
+    "eeg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".1/sub-01/bem/watershed/sub-01_brain_surface",
+    ".1/sub-01/bem/watershed/sub-01_inner_skull_surface",
+    ".1/sub-01/bem/watershed/sub-01_outer_skin_surface",
+    ".1/sub-01/bem/watershed/sub-01_outer_skull_surface",
+    ".1/sub-02/bem/watershed/sub-02_brain_surface",
+    ".1/sub-02/bem/watershed/sub-02_inner_skull_surface",
+    ".1/sub-02/bem/watershed/sub-02_outer_skin_surface",
+    ".1/sub-02/bem/watershed/sub-02_outer_skull_surface",
+    ".1/sub-03/bem/watershed/sub-03_brain_surface",
+    ".1/sub-03/bem/watershed/sub-03_inner_skull_surface",
+    ".1/sub-03/bem/watershed/sub-03_outer_skin_surface",
+    ".1/sub-03/bem/watershed/sub-03_outer_skull_surface",
+    ".1/sub-04/bem/watershed/orig/sub-04_brain_surface",
+    ".1/sub-04/bem/watershed/orig/sub-04_inner_skull_surface",
+    ".1/sub-04/bem/watershed/orig/sub-04_outer_skin_surface",
+    ".1/sub-04/bem/watershed/orig/sub-04_outer_skull_surface",
+    ".1/sub-04/bem/watershed/sub-04_brain_surface",
+    ".1/sub-04/bem/watershed/sub-04_inner_skull_surface",
+    ".1/sub-04/bem/watershed/sub-04_outer_skin_surface",
+    ".1/sub-04/bem/watershed/sub-04_outer_skull_surface",
+    ".1/sub-06/bem/watershed/sub-06_brain_surface",
+    ".1/sub-06/bem/watershed/sub-06_inner_skull_surface",
+    ".1/sub-06/bem/watershed/sub-06_outer_skin_surface",
+    ".1/sub-06/bem/watershed/sub-06_outer_skull_surface",
+    ".1/sub-07/bem/watershed/sub-07_brain_surface",
+    ".1/sub-07/bem/watershed/sub-07_inner_skull_surface",
+    ".1/sub-07/bem/watershed/sub-07_outer_skin_surface",
+    ".1/sub-07/bem/watershed/sub-07_outer_skull_surface",
+    ".1/sub-08/bem/watershed/sub-08_brain_surface",
+    ".1/sub-08/bem/watershed/sub-08_inner_skull_surface",
+    ".1/sub-08/bem/watershed/sub-08_outer_skin_surface",
+    ".1/sub-08/bem/watershed/sub-08_outer_skull_surface",
+    ".1/sub-09/bem/watershed/sub-09_brain_surface",
+    ".1/sub-09/bem/watershed/sub-09_inner_skull_surface",
+    ".1/sub-09/bem/watershed/sub-09_outer_skin_surface",
+    ".1/sub-09/bem/watershed/sub-09_outer_skull_surface",
+    ".1/sub-10/bem/watershed/sub-10_brain_surface",
+    ".1/sub-10/bem/watershed/sub-10_inner_skull_surface",
+    ".1/sub-10/bem/watershed/sub-10_outer_skin_surface",
+    ".1/sub-10/bem/watershed/sub-10_outer_skull_surface",
+    ".1/sub-11/bem/watershed/sub-11_brain_surface",
+    ".1/sub-11/bem/watershed/sub-11_inner_skull_surface",
+    ".1/sub-11/bem/watershed/sub-11_outer_skin_surface",
+    ".1/sub-11/bem/watershed/sub-11_outer_skull_surface",
+    ".1/sub-12/bem/watershed/sub-12_brain_surface",
+    ".1/sub-12/bem/watershed/sub-12_inner_skull_surface",
+    ".1/sub-12/bem/watershed/sub-12_outer_skin_surface",
+    ".1/sub-12/bem/watershed/sub-12_outer_skull_surface",
+    ".1/sub-13/bem/watershed/orig/sub-13_brain_surface",
+    ".1/sub-13/bem/watershed/orig/sub-13_inner_skull_surface",
+    ".1/sub-13/bem/watershed/orig/sub-13_outer_skin_surface",
+    ".1/sub-13/bem/watershed/orig/sub-13_outer_skull_surface",
+    ".1/sub-13/bem/watershed/sub-13_brain_surface",
+    ".1/sub-13/bem/watershed/sub-13_inner_skull_surface",
+    ".1/sub-13/bem/watershed/sub-13_outer_skin_surface",
+    ".1/sub-13/bem/watershed/sub-13_outer_skull_surface",
+    ".1/sub-14/bem/watershed/sub-14_brain_surface",
+    ".1/sub-14/bem/watershed/sub-14_inner_skull_surface",
+    ".1/sub-14/bem/watershed/sub-14_outer_skin_surface",
+    ".1/sub-14/bem/watershed/sub-14_outer_skull_surface",
+    ".1/sub-16/bem/watershed/sub-16_brain_surface",
+    ".1/sub-16/bem/watershed/sub-16_inner_skull_surface",
+    ".1/sub-16/bem/watershed/sub-16_outer_skin_surface",
+    ".1/sub-16/bem/watershed/sub-16_outer_skull_surface",
+    ".1/sub-17/bem/watershed/sub-17_brain_surface",
+    ".1/sub-17/bem/watershed/sub-17_inner_skull_surface",
+    ".1/sub-17/bem/watershed/sub-17_outer_skin_surface",
+    ".1/sub-17/bem/watershed/sub-17_outer_skull_surface",
+    ".1/sub-18/bem/watershed/sub-18_brain_surface",
+    ".1/sub-18/bem/watershed/sub-18_inner_skull_surface",
+    ".1/sub-18/bem/watershed/sub-18_outer_skin_surface",
+    ".1/sub-18/bem/watershed/sub-18_outer_skull_surface",
+    ".1/sub-19/bem/watershed/sub-19_brain_surface",
+    ".1/sub-19/bem/watershed/sub-19_inner_skull_surface",
+    ".1/sub-19/bem/watershed/sub-19_outer_skin_surface",
+    ".1/sub-19/bem/watershed/sub-19_outer_skull_surface",
+    ".1/sub-20/bem/watershed/orig/sub-20_brain_surface",
+    ".1/sub-20/bem/watershed/orig/sub-20_inner_skull_surface",
+    ".1/sub-20/bem/watershed/orig/sub-20_outer_skin_surface",
+    ".1/sub-20/bem/watershed/orig/sub-20_outer_skull_surface",
+    ".1/sub-20/bem/watershed/sub-20_brain_surface",
+    ".1/sub-20/bem/watershed/sub-20_inner_skull_surface",
+    ".1/sub-20/bem/watershed/sub-20_outer_skin_surface",
+    ".1/sub-20/bem/watershed/sub-20_outer_skull_surface",
+    ".3/sub-01/anat/sub-01_space-DWI_desc-brain_mask",
+    ".3/sub-02/anat/sub-02_space-DWI_desc-brain_mask",
+    ".3/sub-03/anat/sub-03_space-DWI_desc-brain_mask",
+    ".3/sub-04/anat/sub-04_space-DWI_desc-brain_mask",
+    ".3/sub-05/anat/sub-05_space-DWI_desc-brain_mask",
+    ".3/sub-06/anat/sub-06_space-DWI_desc-brain_mask",
+    ".3/sub-07/anat/sub-07_space-DWI_desc-brain_mask",
+    ".3/sub-08/anat/sub-08_space-DWI_desc-brain_mask",
+    ".3/sub-09/anat/sub-09_space-DWI_desc-brain_mask",
+    ".3/sub-10/anat/sub-10_space-DWI_desc-brain_mask",
+    ".3/sub-11/anat/sub-11_space-DWI_desc-brain_mask",
+    ".3/sub-12/anat/sub-12_space-DWI_desc-brain_mask",
+    ".3/sub-13/anat/sub-13_space-DWI_desc-brain_mask",
+    ".3/sub-14/anat/sub-14_space-DWI_desc-brain_mask",
+    ".3/sub-15/anat/sub-15_space-DWI_desc-brain_mask",
+    ".3/sub-16/anat/sub-16_space-DWI_desc-brain_mask",
+    ".3/sub-17/anat/sub-17_space-DWI_desc-brain_mask",
+    ".3/sub-18/anat/sub-18_space-DWI_desc-brain_mask",
+    ".3/sub-19/anat/sub-19_space-DWI_desc-brain_mask",
+    ".3/sub-20/anat/sub-20_space-DWI_desc-brain_mask",
+    ".H",
+    ".K",
+    ".T1",
+    ".annot",
+    ".area",
+    ".avg_curv",
+    ".bak",
+    ".bdf",
+    ".bval",
+    ".bvec",
+    ".cmd",
+    ".crv",
+    ".csv",
+    ".ctab",
+    ".curv",
+    ".dat",
+    ".defect_borders",
+    ".defect_chull",
+    ".defect_labels",
+    ".done",
+    ".env",
+    ".fdt",
+    ".fif",
+    ".gitattributes",
+    ".gpickle",
+    ".graphml",
+    ".gz",
+    ".html",
+    ".inflated",
+    ".is",
+    ".jacobian_white",
+    ".json",
+    ".label",
+    ".local-copy",
+    ".log",
+    ".lta",
+    ".m",
+    ".m3z",
+    ".mat",
+    ".md",
+    ".mgh",
+    ".mgz",
+    ".mid",
+    ".nofix",
+    ".old",
+    ".orig",
+    ".pdf",
+    ".pial",
+    ".pointset",
+    ".preaparc",
+    ".premesh",
+    ".py",
+    ".reg",
+    ".rois",
+    ".set",
+    ".sh",
+    ".smoothwm",
+    ".sphere",
+    ".spi",
+    ".stats",
+    ".sulc",
+    ".surf",
+    ".thickness",
+    ".touch",
+    ".trk",
+    ".tsv",
+    ".txt",
+    ".volume",
+    ".white",
+    ".xfm",
+    ".xlsx",
+    ".xyz",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "VEPCON is a multimodal neuroimaging dataset comprising high-density EEG, structural MRI, and diffusion-weighted imaging from 20 participants performing visual discrimination tasks. The dataset includes raw EEG and MRI data, preprocessed EEG, individual brain parcellations at five spatial resolutions (83, 129, 234, 463, and 1015 regions), structural connectomes derived from diffusion imaging, and EEG source imaging solutions computed using boundary element models. This resource supports multimodal methods development, structure-function relationship studies, and optimization of source imaging and graph analytical approaches. Note: Raw EEG data for sub-05 (both task-faces and task-motion) and sub-15 (task-motion) were excluded due to excessive motion artifacts.",
+  "methods_description": "High-density EEG was recorded during two visual tasks: face discrimination (task-faces) and motion coherence discrimination (task-motion). Structural MRI and diffusion-weighted images were acquired in a separate session. EEG preprocessing included single-trial extraction for each condition. Structural connectomes were derived from fiber count, fiber density, fractional anisotropy, and mean diffusivity maps. Individual brain parcellations were generated at five spatial resolutions (83, 129, 234, 463, and 1015 regions). EEG inverse solutions were computed based on individual anatomy using boundary element models derived from Freesurfer segmentations.",
+  "keywords": [
+    {
+      "term": "visual evoked potentials"
+    },
+    {
+      "term": "EEG source imaging"
+    },
+    {
+      "term": "source localization"
+    },
+    {
+      "term": "brain parcellation"
+    },
+    {
+      "term": "structural connectome"
+    },
+    {
+      "term": "diffusion weighted imaging"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "high-density EEG"
+    },
+    {
+      "term": "face discrimination"
+    },
+    {
+      "term": "motion coherence"
+    },
+    {
+      "term": "boundary element model"
+    },
+    {
+      "term": "structural connectivity"
+    },
+    {
+      "term": "graph analysis"
+    },
+    {
+      "term": "Freesurfer"
+    },
+    {
+      "term": "BIDS"
+    }
+  ],
+  "source_hash": "9522b524ecd7ecca941c2b11add0ce65bb6a2cc842df103816a7394cd860b853"
 }
