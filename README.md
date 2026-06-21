@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003505-blue)](https://doi.org/10.82901/nemar.on003505)
+
 # VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes
 
 ## Overview
