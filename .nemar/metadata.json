@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes",
-  "description": "VEPCON is a multimodal BIDS dataset with high-density EEG, structural MRI and diffusion-weighted imaging from 20 participants. Visual evoked potentials were recorded during face versus scrambled-face discrimination and coherent versus incoherent motion discrimination. Derivatives include preprocessed single-trial EEG, FreeSurfer outputs, multi-scale brain parcellations (83 to 1015 regions), structural connectomes, and EEG source-imaging inverse solutions, supporting multimodal methods development and structure-function studies.",
-  "methods_description": "High-density EEG was recorded while participants discriminated briefly presented faces from scrambled faces (task-faces) or coherent from incoherent motion (task-motion). Structural MRI and DWI were acquired in a separate session. Derivatives include FreeSurfer 7.1.1 reconstructions, MNE-generated BEM models, parcellations at 5 resolutions, and connectomes based on fiber count, fiber density, fractional anisotropy and mean diffusivity.",
+  "description": "VEPCON is a multimodal BIDS dataset with high-density EEG, structural MRI, and diffusion-weighted imaging from 20 participants. Visual evoked potentials were recorded during face versus scrambled-face discrimination and coherent versus incoherent motion discrimination. Derivatives include preprocessed single-trial EEG, FreeSurfer outputs, multi-scale brain parcellations (83 to 1015 regions), structural connectomes, and EEG source-imaging inverse solutions with code for regional time series.",
+  "methods_description": "High-density EEG was recorded during two visual tasks (faces vs. scrambled faces; coherent vs. incoherent motion). MRI and DWI were acquired in a separate session from the same participants. Derivatives were produced with FreeSurfer 7.1.1 and MNE (BEM models), with parcellations at 5 spatial resolutions and connectomes based on fiber count, fiber density, fractional anisotropy, and mean diffusivity.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,7 +23,9 @@
       "term": "EEG"
     },
     {
-      "term": "Evoked Potentials, Visual"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     },
     {
       "term": "source imaging"
@@ -38,7 +40,9 @@
       "term": "brain parcellation"
     },
     {
-      "term": "Magnetic Resonance Imaging"
+      "term": "Magnetic Resonance Imaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
     }
   ],
   "related_identifiers": [
@@ -53,14 +57,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.18112/openneuro.ds003505.v1.1.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
-    },
-    {
       "identifier": "https://nemar.org/dataset/on003505",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003505.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -266,5 +270,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "cb6f0f88f9c9900113968f8b67d1b4b866fa7262b54d3b94a7499eccf184c5eb"
+  "source_hash": "394fa696eb14c5dab17b3ca0e7675b286e2a924759aa75e24c7c4547ca34290d"
 }
